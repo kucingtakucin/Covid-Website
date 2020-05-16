@@ -11,7 +11,8 @@ class App extends Component {
                     Ini buat header
                 </header>
                 <main>
-                    Ini buat main content
+                    <h2>Main Content</h2>
+                        Halo teman-temanku tercinta <3
                 </main>
                 <footer>
                     Ini buat footer
