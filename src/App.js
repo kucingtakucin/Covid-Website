@@ -14,7 +14,7 @@ class App extends Component {
                     Ini buat main content
                 </main>
                 <footer>
-                    Ini buat footer
+                    That's the spirit
                 </footer>
             </React.Fragment>
         )
