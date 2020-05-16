@@ -15,7 +15,7 @@ class App extends Component {
                         Halo teman-temanku tercinta <3
                 </main>
                 <footer>
-                    Ini buat footer
+                    That's the spirit
                 </footer>
             </React.Fragment>
         )
