@@ -17,7 +17,7 @@ class App extends Component {
                 </header>
                 <main>
                     <h2>Main Content</h2>
-                        Halo teman-temanku tercinta <3
+                        Halo teman-temanku tercinta
                 </main>
                 <footer>
                     That's the spirit
