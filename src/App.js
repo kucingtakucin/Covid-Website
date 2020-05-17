@@ -5,10 +5,15 @@ class App extends Component {
         return (
             <React.Fragment>
                 <header>
+					<h1> Waspada Covid sik </h1>
                     <nav>
-                        Ini buat nav
+						<ul>
+							<li> <a href="#">Home</a></li>
+							<li> <a href="#">About</a></li>
+							<li> <a href="#">Contact</a></li>
+						</ul>
                     </nav>
-                    Ini buat header
+                    Coba ae sik njajal..
                 </header>
                 <main>
                     Ini buat main content
