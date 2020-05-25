@@ -6,7 +6,7 @@ class DataKasus extends Component {
         super(props);
         this.state = {
             global: {},
-            local_data: {},
+            local: {},
         }
 
         this.getGlobalData = this.getGlobalData.bind(this)
@@ -32,26 +32,26 @@ class DataKasus extends Component {
                 this.setState({
                     global: JSON.parse(data.contents)
                 })
-                console.log(this.state.global)
             })
             .catch(error => {
                 console.error(`Error: ${error}`)
             })
-
     }
 
     getLocalData(){
-        fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('api.kawalcorona.com/indonesia')}`)
+        fetch(`https://api.allorigins.win/get?url=${encodeURIComponent('covid-website-kita.now.sh/api/local')}`)
             .then(response => {
                 if (!response.ok) throw new Error(response.statusText)
                 return response.json()
             })
             .then(data => {
                 this.setState({
-                    local_data: JSON.parse(data.contents)[0],
+                    local: JSON.parse(data.contents),
                 })
-            });
-
+            })
+            .catch(error => {
+                console.error(`Error: ${error}`)
+            })
     }
 
     render() {
@@ -129,7 +129,7 @@ class DataKasus extends Component {
                                             <div className="card rounded-pill border-danger shadow mb-3">
                                                 <div
                                                     className="card-body d-flex flex-column align-items-center justify-content-center">
-                                                    <h3 className="card-title font-weight-bold text-danger mb-0">{this.state.local_data.positif}</h3>
+                                                    <h3 className="card-title font-weight-bold text-danger mb-0">{this.state.local.local_positif}</h3>
                                                     <p className="card-text">POSITIF</p>
                                                 </div>
                                             </div>
@@ -138,7 +138,7 @@ class DataKasus extends Component {
                                             <div className="card rounded-pill border-warning shadow mb-3">
                                                 <div
                                                     className="card-body d-flex flex-column align-items-center justify-content-center">
-                                                    <h3 className="card-title font-weight-bold text-warning mb-0">{this.state.local_data.dirawat}</h3>
+                                                    <h3 className="card-title font-weight-bold text-warning mb-0">{this.state.local.local_dirawat}</h3>
                                                     <p className="card-text">DALAM PERAWATAN</p>
                                                 </div>
                                             </div>
@@ -147,7 +147,7 @@ class DataKasus extends Component {
                                             <div className="card rounded-pill border-success shadow mb-3">
                                                 <div
                                                     className="card-body d-flex flex-column align-items-center justify-content-center">
-                                                    <h3 className="card-title font-weight-bold text-success mb-0">{this.state.local_data.sembuh}</h3>
+                                                    <h3 className="card-title font-weight-bold text-success mb-0">{this.state.local.local_sembuh}</h3>
                                                     <p className="card-text">SEMBUH</p>
                                                 </div>
                                             </div>
@@ -156,7 +156,7 @@ class DataKasus extends Component {
                                             <div className="card rounded-pill border-dark shadow mb-3">
                                                 <div
                                                     className="card-body d-flex flex-column align-items-center justify-content-center">
-                                                    <h3 className="card-title font-weight-bold text-dark mb-0">{this.state.local_data.meninggal}</h3>
+                                                    <h3 className="card-title font-weight-bold text-dark mb-0">{this.state.local.local_meninggal}</h3>
                                                     <p className="card-text">MENINGGAL</p>
                                                 </div>
                                             </div>

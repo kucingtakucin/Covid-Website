@@ -21,10 +21,6 @@ app.prepare().then(() => {
         next();
     })
 
-    server.get('/api/global', (req, res) => {
-        return handle(req, res)
-    })
-
     server.all('*', (req, res) => {
         return handle(req, res)
     })
