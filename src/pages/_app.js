@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import '../styles/style.css'
+import '../assets/styles/style.sass'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App({ Component, pageProps }) {

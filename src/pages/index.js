@@ -1,6 +1,5 @@
 import React, {Component} from 'react'
 import Head from 'next/head'
-import fetch from 'isomorphic-unfetch'
 import DataKasus from "../components/DataKasus";
 
 class Home extends Component {
@@ -25,9 +24,58 @@ class Home extends Component {
 function AppHeader() {
     return (
         <header>
-            <h1 className="title">
-                Welcome to <a href="https://nextjs.org">Next.js!</a>
-            </h1>
+            <div className="container d-flex align-items-center justify-content-center">
+                <div className="row">
+                    <div className="col-md-4">
+                        <div className="card bg-light border-secondary shadow mb-5">
+                            <img src="..." className="card-img-top" alt="..."/>
+                                <div className="card-body">
+                                    <h5 className="card-title">Card title</h5>
+                                </div>
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="card bg-light border-secondary shadow mb-5">
+                            <img src="..." className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                                <h5 className="card-title">Card title</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="card bg-light border-secondary shadow mb-5">
+                            <img src="..." className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                                <h5 className="card-title">Card title</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="card bg-light border-secondary shadow mb-5">
+                            <img src="..." className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                                <h5 className="card-title">Card title</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="card bg-light border-secondary shadow mb-5">
+                            <img src="..." className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                                <h5 className="card-title">Card title</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div className="col-md-4">
+                        <div className="card bg-light border-secondary shadow mb-5">
+                            <img src="..." className="card-img-top" alt="..."/>
+                            <div className="card-body">
+                                <h5 className="card-title">Card title</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </header>
     )
 }
@@ -45,11 +93,7 @@ function AppMain() {
 function AppFooter() {
     return (
         <footer>
-            <a
-                href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-                target="_blank"
-                rel="noopener noreferrer"
-            >
+            <a>
                 Powered by{' '}
                 <img src="/vercel.svg" alt="Vercel Logo" className="logo"/>
             </a>
