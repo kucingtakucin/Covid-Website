@@ -60,7 +60,7 @@ class DataKasus extends Component {
                 <div className="container">
                     <div className="row">
                         <div className="col-md-12 text-center">
-                            <h1 className="display-3 mb-5 font-weight-bold"><span id="covid-19">COVID-19</span> Global Data</h1>
+                            <h1 className="display-4 mb-5 font-weight-bold"><span id="covid-19">COVID-19</span> Global & National Data</h1>
                         </div>
                     </div>
                     <div className="row">

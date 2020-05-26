@@ -10,15 +10,6 @@
   font-weight: normal;
   font-style: normal;
 }
-html, body {
-  padding: 0;
-  margin: 0;
-}
-
-* {
-  box-sizing: border-box;
-}
-
 header {
   font-family: "Cuprum", sans-serif;
 }
@@ -29,11 +20,31 @@ header .container {
 main {
   font-family: "Cuprum", sans-serif;
 }
-main section#data-kasus {
+main section#data-kasus .container {
   min-height: 100vh;
 }
-main section#data-kasus h1.display-3 span#covid-19 {
+main section#data-kasus .container h1.display-4 span#covid-19 {
   color: #0070f3;
+}
+main section#peta-kasus .container {
+  min-height: 100vh;
+}
+main section#peta-kasus .container h1.display-4 span#covid-19 {
+  color: #0070f3;
+}
+main section#peta-kasus .container iframe {
+  width: 100%;
+  height: 600px;
+}
+main section#peta-rujukan .container {
+  min-height: 100vh;
+}
+main section#peta-rujukan .container h1.display-4 span#covid-19 {
+  color: #0070f3;
+}
+main section#peta-rujukan .container iframe {
+  width: 100%;
+  height: 600px;
 }
 
 footer {
