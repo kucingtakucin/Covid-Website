@@ -1,0 +1,48 @@
+@font-face {
+  font-family: "Cuprum";
+  src: url("../font/Cuprum/Cuprum-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Indie Flower";
+  src: url("../font/IndieFlower/web_fonts/indieflower_regular_macroman/IndieFlower-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+html, body {
+  padding: 0;
+  margin: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+header {
+  font-family: "Cuprum", sans-serif;
+}
+header .container {
+  min-height: 100vh;
+}
+
+main {
+  font-family: "Cuprum", sans-serif;
+}
+main section#data-kasus {
+  min-height: 100vh;
+}
+main section#data-kasus h1.display-3 span#covid-19 {
+  color: #0070f3;
+}
+
+footer {
+  font-family: "Cuprum", sans-serif;
+  width: 100%;
+  border-top: 1px solid #eaeaea;
+}
+footer .container {
+  height: 100px;
+}
+
+/*# sourceMappingURL=style.css.map */
