@@ -1,8 +1,9 @@
 import React, {Component} from 'react'
 import Head from 'next/head'
-import DataKasus from "../components/DataKasus";
-import PetaKasus from "../components/PetaKasus";
-import PetaRujukan from "../components/PetaRujukan";
+import DataKasus from "../components/DataKasus"
+import PetaKasus from "../components/PetaKasus"
+import PetaRujukan from "../components/PetaRujukan"
+import TentangKasus from "../components/TentangKasus"
 
 class Home extends Component {
     render() {
@@ -89,6 +90,7 @@ function AppMain() {
                 <DataKasus/>        {/* Bagian data kasus COVID-19 */}
                 <PetaKasus/>        {/* Bagian peta kasus COVID-19 */}
                 <PetaRujukan/>     {/* Bagian peta rujukan kasus COVID-19 */}
+                <TentangKasus/>     {/* Bagian edukasi tentang COVID-19 */}
             </main>
         </React.Fragment>
     )

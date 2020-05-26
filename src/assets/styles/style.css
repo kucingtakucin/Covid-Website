@@ -10,6 +10,10 @@
   font-weight: normal;
   font-style: normal;
 }
+span#covid-19 {
+  color: #0070f3;
+}
+
 header {
   font-family: "Cuprum", sans-serif;
 }
@@ -23,14 +27,8 @@ main {
 main section#data-kasus .container {
   min-height: 100vh;
 }
-main section#data-kasus .container h1.display-4 span#covid-19 {
-  color: #0070f3;
-}
 main section#peta-kasus .container {
   min-height: 100vh;
-}
-main section#peta-kasus .container h1.display-4 span#covid-19 {
-  color: #0070f3;
 }
 main section#peta-kasus .container iframe {
   width: 100%;
@@ -38,9 +36,6 @@ main section#peta-kasus .container iframe {
 }
 main section#peta-rujukan .container {
   min-height: 100vh;
-}
-main section#peta-rujukan .container h1.display-4 span#covid-19 {
-  color: #0070f3;
 }
 main section#peta-rujukan .container iframe {
   width: 100%;
