@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import Head from 'next/head'
 import DataKasus from "../components/DataKasus";
+import PetaKasus from "../components/PetaKasus";
 
 class Home extends Component {
     render() {
@@ -85,6 +86,7 @@ function AppMain() {
         <React.Fragment>
             <main>
                 <DataKasus/>    {/* Bagian data kasus COVID-19 */}
+                <PetaKasus/>    {/* Bagian peta kasus COVID-19 */}
             </main>
         </React.Fragment>
     )

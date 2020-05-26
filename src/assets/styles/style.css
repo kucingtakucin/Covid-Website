@@ -29,11 +29,21 @@ header .container {
 main {
   font-family: "Cuprum", sans-serif;
 }
-main section#data-kasus {
+main section#data-kasus .container {
   min-height: 100vh;
 }
-main section#data-kasus h1.display-3 span#covid-19 {
+main section#data-kasus .container h1.display-3 span#covid-19 {
   color: #0070f3;
+}
+main section#peta-kasus .container {
+  min-height: 100vh;
+}
+main section#peta-kasus .container h1.display-3 span#covid-19 {
+  color: #0070f3;
+}
+main section#peta-kasus .container iframe {
+  width: 100%;
+  height: 750px;
 }
 
 footer {
