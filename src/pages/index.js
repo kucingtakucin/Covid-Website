@@ -93,10 +93,12 @@ function AppMain() {
 function AppFooter() {
     return (
         <footer>
-            <a>
-                Powered by{' '}
-                <img src="/vercel.svg" alt="Vercel Logo" className="logo"/>
-            </a>
+            <div className="container d-flex align-items-center justify-content-center">
+                <a>
+                    Powered by{' '}
+                    Covid Website Kita 2020
+                </a>
+            </div>
         </footer>
     )
 }
