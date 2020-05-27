@@ -28,7 +28,7 @@ function AppHeader() {  /* Ini header */
     return (
         <header>
             {/* ----- Navbar ----- */}
-            <nav className="navbar navbar-expand-lg navbar-light bg-light">
+            <nav className="navbar navbar-expand-lg navbar-light bg-light fixed-top">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
                         <img src="/images/react.png" width='30' height='30' alt="Navbar Brand"/>
@@ -57,10 +57,27 @@ function AppHeader() {  /* Ini header */
 
             {/* ----- Container ----- */}
             <div className="container d-flex align-items-center justify-content-center">
-                {/* ----- Baris ke-1  ----- */}
+                {/* ----- Baris ke-1 ----- */}
+                <section className="row">
+                    {/* ----- Kolom ke-1 ----- */}
+                    <section className="col-md-6">      {/* Ini buat big title */}
+
+                    </section>
+                    {/* ----- Akhir dari kolom ke-1 ----- */}
+
+                    {/* ----- Kolom ke-2 ----- */}
+                    <section className="col-md-6">      {/* Ini buat gambar karakter & virus corona */}
+
+                    </section>
+                    {/* ----- Akhir dari kolom ke-2 ----- */}
+                </section>
+                {/* ----- Akhir dari baris ke-1 -----*/}
+
+                {/* ----- Baris ke-2  ----- */}
                 <section className="row">
                     {/* ----- Kolom ke-1 ----- */}
                     <section className="col-md-4">
+                        {/* ----- Card -----*/}
                         <div className="card bg-light border-secondary shadow mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                                 <div className="card-body">
@@ -69,6 +86,7 @@ function AppHeader() {  /* Ini header */
                         </div>
                     </section>
                     <section className="col-md-4">
+                        {/* ----- Card -----*/}
                         <div className="card bg-light border-secondary shadow mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                             <div className="card-body">
@@ -80,6 +98,7 @@ function AppHeader() {  /* Ini header */
 
                     {/* ----- Kolom ke-2 ----- */}
                     <section className="col-md-4">
+                        {/* ----- Card ----- */}
                         <div className="card bg-light border-secondary shadow mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                             <div className="card-body">
@@ -88,6 +107,7 @@ function AppHeader() {  /* Ini header */
                         </div>
                     </section>
                     <section className="col-md-4">
+                        {/* ----- Card ----- */}
                         <div className="card bg-light border-secondary shadow mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                             <div className="card-body">
@@ -99,6 +119,7 @@ function AppHeader() {  /* Ini header */
 
                     {/* ----- Kolom ke-3 ----- */}
                     <section className="col-md-4">
+                        {/* ----- Card ----- */}
                         <div className="card bg-light border-secondary shadow mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                             <div className="card-body">
@@ -107,6 +128,7 @@ function AppHeader() {  /* Ini header */
                         </div>
                     </section>
                     <section className="col-md-4">
+                        {/* ----- Card ----- */}
                         <div className="card bg-light border-secondary shadow mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                             <div className="card-body">

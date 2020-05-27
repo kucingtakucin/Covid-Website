@@ -71,6 +71,7 @@ class DataKasus extends Component {
                     <section className="row">
                         {/* ---- Kolom ke-1 ----- */}
                         <section className="col-md-4">
+                            {/* ----- Card ----- */}
                             <div className="card bg-danger text-white shadow rounded-pill overflow-hidden mb-3">
                                 <div className="card-header p-1 text-center"><h5 className="m-0">TOTAL POSITIF</h5>
                                 </div>
@@ -91,6 +92,7 @@ class DataKasus extends Component {
 
                         {/* ----- Kolom ke-2 ----- */}
                         <section className="col-md-4">
+                            {/* ----- Card ----- */}
                             <div className="card bg-success text-white shadow rounded-pill overflow-hidden mb-3">
                                 <div className="card-header p-1 text-center"><h5 className="m-0">TOTAL SEMBUH</h5></div>
                                 <div className="row no-gutters">
@@ -110,6 +112,7 @@ class DataKasus extends Component {
 
                         {/* ----- Kolom ke-3 ----- */}
                         <section className="col-md-4">
+                            {/* ----- Card ----- */}
                             <div className="card bg-dark text-white shadow rounded-pill overflow-hidden mb-3">
                                 <div className="card-header p-1 text-center"><h5 className="m-0">TOTAL MENINGGAL</h5>
                                 </div>
@@ -133,6 +136,7 @@ class DataKasus extends Component {
                     {/* ----- Baris ke-3 ----- */}
                     <section className="row">
                         <section className="col-md-12">
+                            {/* ----- Card ----- */}
                             <div className="card bg-info rounded-lg shadow">
                                 <div className="card-header text-white d-flex flex-row justify-content-center">
                                     <h1 className="m-0 mr-3">INDONESIA</h1>
@@ -144,6 +148,7 @@ class DataKasus extends Component {
                                     <section className="row">
                                         {/* ----- Kolom ke-1 ----- */}
                                         <section className="col-md-3">
+                                            {/* ----- Card ----- */}
                                             <div className="card rounded-pill border-danger shadow mb-3">
                                                 <div
                                                     className="card-body d-flex flex-column align-items-center justify-content-center">
@@ -156,6 +161,7 @@ class DataKasus extends Component {
 
                                         {/* ----- Kolom ke-2 ----- */}
                                         <section className="col-md-3">
+                                            {/* ----- Card ----- */}
                                             <div className="card rounded-pill border-warning shadow mb-3">
                                                 <div
                                                     className="card-body d-flex flex-column align-items-center justify-content-center">
@@ -168,6 +174,7 @@ class DataKasus extends Component {
 
                                         {/* ----- Kolom ke-3 ----- */}
                                         <section className="col-md-3">
+                                            {/* ----- Card ----- */}
                                             <div className="card rounded-pill border-success shadow mb-3">
                                                 <div
                                                     className="card-body d-flex flex-column align-items-center justify-content-center">
@@ -180,6 +187,7 @@ class DataKasus extends Component {
 
                                         {/* ----- Kolom ke-4 ----- */}
                                         <section className="col-md-3">
+                                            {/* ----- Card ----- */}
                                             <div className="card rounded-pill border-dark shadow mb-3">
                                                 <div
                                                     className="card-body d-flex flex-column align-items-center justify-content-center">
