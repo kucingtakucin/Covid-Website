@@ -10,27 +10,30 @@
   font-weight: normal;
   font-style: normal;
 }
+span#covid-19 {
+  color: #0070f3;
+}
+
 header {
+  background: url("/images/background.png") center center no-repeat;
+  background-size: cover;
   font-family: "Cuprum", sans-serif;
 }
 header .container {
   min-height: 100vh;
+}
+header .container .card {
+  cursor: pointer;
 }
 
 main {
   font-family: "Cuprum", sans-serif;
 }
 main section#data-kasus .container {
-  min-height: 100vh;
-}
-main section#data-kasus .container h1.display-4 span#covid-19 {
-  color: #0070f3;
+  min-height: 80vh;
 }
 main section#peta-kasus .container {
   min-height: 100vh;
-}
-main section#peta-kasus .container h1.display-4 span#covid-19 {
-  color: #0070f3;
 }
 main section#peta-kasus .container iframe {
   width: 100%;
@@ -39,12 +42,15 @@ main section#peta-kasus .container iframe {
 main section#peta-rujukan .container {
   min-height: 100vh;
 }
-main section#peta-rujukan .container h1.display-4 span#covid-19 {
-  color: #0070f3;
-}
 main section#peta-rujukan .container iframe {
   width: 100%;
   height: 600px;
+}
+main section#tentang-kasus .container {
+  min-height: 100vh;
+}
+main section#pencegahan-kasus .container {
+  min-height: 100vh;
 }
 
 footer {
