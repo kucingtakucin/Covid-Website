@@ -78,19 +78,19 @@ function AppHeader() {  /* Ini header */
                     {/* ----- Kolom ke-1 ----- */}
                     <section className="col-md-4">
                         {/* ----- Card -----*/}
-                        <div className="card bg-light border-secondary shadow mb-5">
+                        <div className="card bg-light shadow rounded-lg mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                                 <div className="card-body">
-                                    <h5 className="card-title">Call Center</h5>
+                                    <h5 className="card-title text-center m-0">Call Center</h5>
                                 </div>
                         </div>
                     </section>
                     <section className="col-md-4">
                         {/* ----- Card -----*/}
-                        <div className="card bg-light border-secondary shadow mb-5">
+                        <div className="card bg-light shadow rounded-lg mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                             <div className="card-body">
-                                <h5 className="card-title">Self Assessment</h5>
+                                <h5 className="card-title text-center m-0">Self Assessment</h5>
                             </div>
                         </div>
                     </section>
@@ -99,19 +99,19 @@ function AppHeader() {  /* Ini header */
                     {/* ----- Kolom ke-2 ----- */}
                     <section className="col-md-4">
                         {/* ----- Card ----- */}
-                        <div className="card bg-light border-secondary shadow mb-5">
+                        <div className="card bg-light shadow rounded-lg mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                             <div className="card-body">
-                                <h5 className="card-title">Radar Covid-19</h5>
+                                <h5 className="card-title text-center m-0">Radar Covid-19</h5>
                             </div>
                         </div>
                     </section>
                     <section className="col-md-4">
                         {/* ----- Card ----- */}
-                        <div className="card bg-light border-secondary shadow mb-5">
+                        <div className="card bg-light shadow rounded-lg mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                             <div className="card-body">
-                                <h5 className="card-title">Donasi</h5>
+                                <h5 className="card-title text-center m-0">Donasi</h5>
                             </div>
                         </div>
                     </section>
@@ -120,19 +120,19 @@ function AppHeader() {  /* Ini header */
                     {/* ----- Kolom ke-3 ----- */}
                     <section className="col-md-4">
                         {/* ----- Card ----- */}
-                        <div className="card bg-light border-secondary shadow mb-5">
+                        <div className="card bg-light shadow rounded-lg mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                             <div className="card-body">
-                                <h5 className="card-title">Podcast Covid-19</h5>
+                                <h5 className="card-title text-center m-0">Podcast Covid-19</h5>
                             </div>
                         </div>
                     </section>
                     <section className="col-md-4">
                         {/* ----- Card ----- */}
-                        <div className="card bg-light border-secondary shadow mb-5">
+                        <div className="card bg-light shadow rounded-lg mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                             <div className="card-body">
-                                <h5 className="card-title">Game Whack-A-Corona</h5>
+                                <h5 className="card-title text-center m-0">Game Whack-A-Corona</h5>
                             </div>
                         </div>
                     </section>
