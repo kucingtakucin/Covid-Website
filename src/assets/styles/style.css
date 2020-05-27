@@ -22,6 +22,9 @@ header {
 header .container {
   min-height: 100vh;
 }
+header .container .card {
+  cursor: pointer;
+}
 
 main {
   font-family: "Cuprum", sans-serif;
@@ -44,6 +47,9 @@ main section#peta-rujukan .container iframe {
   height: 600px;
 }
 main section#tentang-kasus .container {
+  min-height: 100vh;
+}
+main section#pencegahan-kasus .container {
   min-height: 100vh;
 }
 
