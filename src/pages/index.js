@@ -14,20 +14,20 @@ class Home extends Component {
                     <title>Covid Website Kita</title>
                     <link rel="icon" href="/favicon.ico"/>
                 </Head>
+
                 {/* Ini bagian body */}
-                <body>
-                    <AppHeader/>    {/* header */}
-                    <AppMain/>      {/* main */}
-                    <AppFooter/>    {/* footer */}
-                </body>
+                <AppHeader/>    {/* header */}
+                <AppMain/>      {/* main */}
+                <AppFooter/>    {/* footer */}
             </React.Fragment>
         )
     }
 }
 
-function AppHeader() {
+function AppHeader() {  /* Ini header */
     return (
         <header>
+            {/* ----- Navbar ----- */}
             <nav className="navbar navbar-expand-lg navbar-light bg-light">
                 <div className="container-fluid">
                     <a className="navbar-brand" href="#">
@@ -38,7 +38,7 @@ function AppHeader() {
                     </button>
 
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul className="navbar-nav mr-auto">
+                        <ul className="navbar-nav mr-auto"> {/* Disini nanti tempat nambahin menu-menu di navbar nya*/}
                             <li className="nav-item active">
                                 <a className="nav-link" href="#">Beranda <span className="sr-only">(current)</span></a>
                             </li>
@@ -53,63 +53,79 @@ function AppHeader() {
                     </div>
                 </div>
             </nav>
+            {/* ----- Akhir dari Navbar ----- */}
+
+            {/* ----- Container ----- */}
             <div className="container d-flex align-items-center justify-content-center">
-                <div className="row">
-                    <div className="col-md-4">
+                {/* ----- Baris ke-1  ----- */}
+                <section className="row">
+                    {/* ----- Kolom ke-1 ----- */}
+                    <section className="col-md-4">
                         <div className="card bg-light border-secondary shadow mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                                 <div className="card-body">
-                                    <h5 className="card-title">Card title</h5>
+                                    <h5 className="card-title">Call Center</h5>
                                 </div>
                         </div>
-                    </div>
-                    <div className="col-md-4">
+                    </section>
+                    <section className="col-md-4">
                         <div className="card bg-light border-secondary shadow mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                             <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
+                                <h5 className="card-title">Self Assessment</h5>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-md-4">
+                    </section>
+                    {/* ----- Akhir dari kolom ke-1 ----- */}
+
+                    {/* ----- Kolom ke-2 ----- */}
+                    <section className="col-md-4">
                         <div className="card bg-light border-secondary shadow mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                             <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
+                                <h5 className="card-title">Radar Covid-19</h5>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-md-4">
+                    </section>
+                    <section className="col-md-4">
                         <div className="card bg-light border-secondary shadow mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                             <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
+                                <h5 className="card-title">Donasi</h5>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-md-4">
+                    </section>
+                    {/* ----- Akhir dari kolom ke-2*/}
+
+                    {/* ----- Kolom ke-3 ----- */}
+                    <section className="col-md-4">
                         <div className="card bg-light border-secondary shadow mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                             <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
+                                <h5 className="card-title">Podcast Covid-19</h5>
                             </div>
                         </div>
-                    </div>
-                    <div className="col-md-4">
+                    </section>
+                    <section className="col-md-4">
                         <div className="card bg-light border-secondary shadow mb-5">
                             <img src="..." className="card-img-top" alt="..."/>
                             <div className="card-body">
-                                <h5 className="card-title">Card title</h5>
+                                <h5 className="card-title">Game Whack-A-Corona</h5>
                             </div>
                         </div>
-                    </div>
-                </div>
+                    </section>
+                    {/* ----- Akhir dari kolom ke-3 ----- */}
+
+                </section>
+                {/* ----- Akhir dari Baris ke-1 ----- */}
+
             </div>
+            {/* ----- Akhir dari Container ----- */}
         </header>
     )
 }
 
-function AppMain() {
+function AppMain() {    /* Ini main */
     return (
         <React.Fragment>
             <main>
@@ -122,7 +138,7 @@ function AppMain() {
     )
 }
 
-function AppFooter() {
+function AppFooter() {      /* Ini footer */
     return (
         <footer>
             <div className="container d-flex align-items-center justify-content-center">
