@@ -27,7 +27,7 @@ class Home extends Component {
 
 function AppNavbar() {
     return (
-        <nav className="navbar navbar-expand-lg navbar-light fixed-top">
+        <nav className="navbar navbar-expand-lg navbar-light fixed-top shadow">
             <div className="container-fluid">
                 <Link href='/'>
                     <a className="navbar-brand">

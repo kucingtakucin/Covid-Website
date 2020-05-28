@@ -14,7 +14,20 @@ class PencegahanKasus extends Component {
                     </section>
                     <section className="row">
                         <section className="col-md-12">
-
+                            <div className="card mb-3">
+                                <div className="row no-gutters">
+                                    <div className="col-md-4">
+                                        <img src="..." className="card-img" alt="..."/>
+                                    </div>
+                                    <div className="col-md-8">
+                                        <div className="card-body">
+                                            <h4 className="card-title">Cek Kondisimu: <span className="font-weight-bold">Self Assessment <span id="covid-19">COVID-19</span></span></h4>
+                                            <p className="card-text">Self Assessment COVID-19 adalah salah satu cara untuk mengetahi apakah Anda memiliki gejala yang memerlukan pemeriksaan dan pengujian lebih lanjut mengenai COVID-19 atau tidak.</p>
+                                            <button className="btn btn-info btn-lg">Deteksi Sekarang</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
                         </section>
                     </section>
                 </div>
