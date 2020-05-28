@@ -20,11 +20,12 @@ header {
   font-family: "Cuprum", sans-serif;
   transition: 0.5s;
 }
-header nav {
-  background-color: #e3f2fd;
-}
 header .container {
   min-height: 100vh;
+}
+header .container .row:first-child {
+  margin-top: 200px;
+  width: 100%;
 }
 header .container a {
   color: #007bff;
@@ -33,12 +34,31 @@ header .container a {
 header .container a .card {
   cursor: pointer;
 }
+header .container a .card img {
+  width: 200px;
+  height: 200px;
+}
+header .container a:hover {
+  color: #0d47a1;
+}
 
 main {
   font-family: "Cuprum", sans-serif;
 }
 main section#data-kasus .container {
   min-height: 80vh;
+}
+main section#data-kasus .container .card.bg-merah {
+  background-color: #f06292;
+}
+main section#data-kasus .container .card.bg-hijau {
+  background-color: #00e676;
+}
+main section#data-kasus .container .card.bg-abu {
+  background-color: #90a4ae;
+}
+main section#data-kasus .container .card.bg-biru {
+  background-color: #03a9f4;
 }
 main section#peta-kasus .container {
   min-height: 100vh;
@@ -59,6 +79,26 @@ main section#tentang-kasus .container {
 }
 main section#pencegahan-kasus .container {
   min-height: 50vh;
+}
+
+main.donasi {
+  background: url("/images/background.png") center center no-repeat;
+  background-size: cover;
+  font-family: "Cuprum", sans-serif;
+}
+main.donasi .card img {
+  width: 150px;
+  height: 150px;
+}
+
+main.radar {
+  background: url("/images/background.png") center center no-repeat;
+  background-size: cover;
+  font-family: "Cuprum", sans-serif;
+}
+main.radar iframe {
+  width: 100%;
+  height: 600px;
 }
 
 footer {

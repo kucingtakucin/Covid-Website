@@ -18,21 +18,35 @@ header
     background-size: cover
     font-family: 'Cuprum', sans-serif
     transition: 0.5s
-    nav
-        background-color: #e3f2fd
     .container
         min-height: 100vh
+        .row:first-child
+            margin-top: 200px
+            width: 100%
         a
             color: #007bff
             text-decoration: none
             .card
                 cursor: pointer
+                img
+                    width: 200px
+                    height: 200px
+        a:hover
+            color: #0d47a1
 
 main
     font-family: 'Cuprum', sans-serif
     section#data-kasus
         .container
             min-height: 80vh
+            .card.bg-merah
+                background-color: #f06292
+            .card.bg-hijau
+                background-color: #00e676
+            .card.bg-abu
+                background-color: #90a4ae
+            .card.bg-biru
+                background-color: #03a9f4
     section#peta-kasus
         .container
             min-height: 100vh
@@ -51,6 +65,23 @@ main
     section#pencegahan-kasus
         .container
             min-height: 50vh
+
+main.donasi
+    background: url("/images/background.png") center center no-repeat
+    background-size: cover
+    font-family: 'Cuprum', sans-serif
+    .card
+        img
+            width: 150px
+            height: 150px
+
+main.radar
+    background: url("/images/background.png") center center no-repeat
+    background-size: cover
+    font-family: 'Cuprum', sans-serif
+    iframe
+        width: 100%
+        height: 600px
 
 footer
     font-family: 'Cuprum', sans-serif

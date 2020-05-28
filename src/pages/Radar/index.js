@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {AppFooter, AppHeader} from "../index";
+import {AppFooter, AppHeader, AppNavbar} from "../index";
 import Head from "next/head";
 
 class Radar extends Component {
@@ -13,9 +13,22 @@ class Radar extends Component {
                 </Head>
 
 
-                <AppHeader/>
-                <main>
-                    <h1>Radar</h1>
+                <header className='radar'>
+                    <AppNavbar/>
+                </header>
+                <main className='radar'>
+                    <div className="container mt-5">
+                        <section className="row">
+                            <section className="col-md-12">
+                                <h1 className="display-4 mt-5 mb-5 font-weight-bold text-center text-white">Radar <span id="covid-19">COVID-19</span> di Indonesia</h1>
+                            </section>
+                        </section>
+                        <section className="row">
+                            <section className="col-md-12">
+                                <iframe src="https://tiger.maps.arcgis.com/apps/opsdashboard/index.html#/088cb05292ed49319aaab70ab2705eca" frameBorder='0'/>
+                            </section>
+                        </section>
+                    </div>
                 </main>
                 <AppFooter/>
             </React.Fragment>

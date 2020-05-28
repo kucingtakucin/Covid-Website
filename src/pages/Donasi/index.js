@@ -1,5 +1,5 @@
 import React, {Component} from 'react'
-import {AppFooter, AppHeader} from "../index";
+import {AppFooter, AppNavbar} from "../index";
 import Head from "next/head";
 
 class Donasi extends Component {
@@ -12,43 +12,55 @@ class Donasi extends Component {
                     <link rel="icon" href="/favicon.ico"/>
                 </Head>
 
-
-                <AppHeader/>
-                <main>
-                    <div className="container">
+                <header className='donasi'>
+                    <AppNavbar/>
+                </header>
+                <main className='donasi'>
+                    <div className="container mt-5">
                         <section className="row">
                             <section className="col-md-12">
-                                <h1 className="display-4 mb-5 font-weight-bold text-center">Donasi</h1>
+                                <h1 className="display-4 mt-5 mb-5 font-weight-bold text-center text-white">Donasi untuk Pencegahan <span id="covid-19">COVID-19</span></h1>
                             </section>
                         </section>
                         <section className="row">
                             <section className="col-md-12">
-                                <div className="card mb-3">
-                                    <img src="..." className="card-img-top" alt="..."/>
-                                    <div className="card-body">
-                                        <h5 className="card-title">Donasi Masker</h5>
-                                        <p className="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit
-                                            longer.</p>
-                                        <button className="btn btn-info btn-lg">Donasi Sekarang</button>
+                                <div className="card shadow mb-3">
+                                    <div className="row no-gutters">
+                                        <div className="col-md-4 d-flex justify-content-center">
+                                            <img src="/images/masker.svg" className="card-img mt-3 mb-3" alt="Masker"/>
+                                        </div>
+                                        <div className="col-md-8">
+                                            <div className="card-body">
+                                                <h3 className="card-title font-weight-bold">Donasi Masker</h3>
+                                                <button className="btn btn-lg btn-info">Donasi Sekarang</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="card mb-3">
-                                    <div className="card-body">
-                                        <img src="..." className="card-img-top" alt="..."/>
-                                        <h5 className="card-title">Donasi Hand-Sanitizer</h5>
-                                        <p className="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <button className="btn btn-info btn-lg">Donasi Sekarang</button>
+                                <div className="card shadow mb-3">
+                                    <div className="row no-gutters">
+                                        <div className="col-md-4 d-flex justify-content-center">
+                                            <img src="/images/sanitizer.svg" className="card-img mt-3 mb-3" alt="Hand Sanitizer"/>
+                                        </div>
+                                        <div className="col-md-8">
+                                            <div className="card-body">
+                                                <h3 className="card-title font-weight-bold">Donasi Hand-Sanitizer</h3>
+                                                <button className="btn btn-lg btn-info">Donasi Sekarang</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div className="card mb-3">
-                                    <div className="card-body">
-                                        <img src="..." className="card-img-top" alt="..."/>
-                                        <h5 className="card-title">Donasi Desinfektan</h5>
-                                        <p className="card-text">This is a wider card with supporting text below as a
-                                            natural lead-in to additional content. This content is a little bit longer.</p>
-                                        <button className="btn btn-info btn-lg">Donasi Sekarang</button>
+                                <div className="card shadow mb-3">
+                                    <div className="row no-gutters">
+                                        <div className="col-md-4 d-flex justify-content-center">
+                                            <img src="/images/beauty.svg" className="card-img mt-3 mb-3" alt="Desinfektan"/>
+                                        </div>
+                                        <div className="col-md-8">
+                                            <div className="card-body">
+                                                <h3 className="card-title font-weight-bold">Donasi Desinfektan</h3>
+                                                <button className="btn btn-lg btn-info">Donasi Sekarang</button>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </section>
