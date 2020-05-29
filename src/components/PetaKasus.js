@@ -17,7 +17,11 @@ class PetaKasus extends Component {
                     {/* ----- Baris ke-2 ----- */}
                     <section className="row">
                         <section className="col-md-12">
-                            <iframe src="https://inacovid19.maps.arcgis.com/apps/opsdashboard/index.html#/81a3572883014c0088a62e1f320c97e1" frameBorder='0'/>
+                            <div className="card shadow rounded-lg mb-3">
+                                <div className="card-body">
+                                    <iframe src="https://inacovid19.maps.arcgis.com/apps/opsdashboard/index.html#/81a3572883014c0088a62e1f320c97e1" frameBorder='0'/>
+                                </div>
+                            </div>
                         </section>
                     </section>
                     {/* ----- Akhir dari baris ke-2 ----- */}

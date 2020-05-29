@@ -18,10 +18,6 @@ header {
   background: url("/images/background.png") center center no-repeat;
   background-size: cover;
   font-family: "Cuprum", sans-serif;
-  transition: 0.5s;
-}
-header .container {
-  min-height: 100vh;
 }
 header .container .row:first-child {
   margin-top: 200px;
@@ -40,6 +36,12 @@ header .container a .card img {
 }
 header .container a:hover {
   color: #0d47a1;
+}
+
+header.podcast {
+  background: url("/images/background.png") center center no-repeat;
+  background-size: cover;
+  min-height: 800px;
 }
 
 main {
@@ -86,6 +88,9 @@ main.donasi {
   background-size: cover;
   font-family: "Cuprum", sans-serif;
 }
+main.donasi .card {
+  max-width: 600px;
+}
 main.donasi .card img {
   width: 150px;
   height: 150px;
@@ -99,6 +104,29 @@ main.radar {
 main.radar iframe {
   width: 100%;
   height: 600px;
+}
+
+main.self-assessment {
+  background: url("/images/background.png") center center no-repeat;
+  background-size: cover;
+  font-family: "Cuprum", sans-serif;
+}
+main.self-assessment .card img {
+  width: 400px;
+}
+
+main.podcast {
+  font-family: "Cuprum", sans-serif;
+  min-height: 110vh;
+}
+main.podcast .container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+main.podcast .container .card {
+  max-width: 600px;
 }
 
 footer {

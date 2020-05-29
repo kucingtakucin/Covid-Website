@@ -14,7 +14,7 @@ class PencegahanKasus extends Component {
                     </section>
                     <section className="row">
                         <section className="col-md-12">
-                            <div className="card mb-3">
+                            <div className="card rounded-lg shadow mb-3">
                                 <div className="row no-gutters">
                                     <div className="col-md-4">
                                         <img src="..." className="card-img" alt="..."/>

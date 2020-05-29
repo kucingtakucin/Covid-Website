@@ -24,7 +24,7 @@ class Donasi extends Component {
                         </section>
                         <section className="row">
                             <section className="col-md-12">
-                                <div className="card shadow mb-3">
+                                <div className="card ml-auto mr-auto shadow mb-3">
                                     <div className="row no-gutters">
                                         <div className="col-md-4 d-flex justify-content-center">
                                             <img src="/images/masker.svg" className="card-img mt-3 mb-3" alt="Masker"/>
@@ -37,7 +37,7 @@ class Donasi extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card shadow mb-3">
+                                <div className="card ml-auto mr-auto shadow mb-3">
                                     <div className="row no-gutters">
                                         <div className="col-md-4 d-flex justify-content-center">
                                             <img src="/images/sanitizer.svg" className="card-img mt-3 mb-3" alt="Hand Sanitizer"/>
@@ -50,7 +50,7 @@ class Donasi extends Component {
                                         </div>
                                     </div>
                                 </div>
-                                <div className="card shadow mb-3">
+                                <div className="card ml-auto mr-auto shadow mb-3">
                                     <div className="row no-gutters">
                                         <div className="col-md-4 d-flex justify-content-center">
                                             <img src="/images/beauty.svg" className="card-img mt-3 mb-3" alt="Desinfektan"/>

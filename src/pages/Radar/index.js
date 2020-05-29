@@ -12,7 +12,6 @@ class Radar extends Component {
                     <link rel="icon" href="/favicon.ico"/>
                 </Head>
 
-
                 <header className='radar'>
                     <AppNavbar/>
                 </header>
@@ -25,7 +24,11 @@ class Radar extends Component {
                         </section>
                         <section className="row">
                             <section className="col-md-12">
-                                <iframe src="https://tiger.maps.arcgis.com/apps/opsdashboard/index.html#/088cb05292ed49319aaab70ab2705eca" frameBorder='0'/>
+                                <div className="card shadow mb-3">
+                                    <div className="card-body">
+                                        <iframe src="https://tiger.maps.arcgis.com/apps/opsdashboard/index.html#/088cb05292ed49319aaab70ab2705eca" frameBorder='0'/>
+                                    </div>
+                                </div>
                             </section>
                         </section>
                     </div>

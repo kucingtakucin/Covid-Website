@@ -17,7 +17,11 @@ class PetaRujukan extends Component {
                     {/* ----- Baris ke-2 ----- */}
                     <section className="row">
                         <section className="col-md-12">
-                            <iframe src="https://inacovid19.maps.arcgis.com/apps/webappviewer/index.html?id=d2595853cbc849ab9e9a790b4345ba38" frameBorder='0'/>
+                            <div className="card shadow rounded-lg mb-3">
+                                <div className="card-body">
+                                    <iframe src="https://inacovid19.maps.arcgis.com/apps/webappviewer/index.html?id=d2595853cbc849ab9e9a790b4345ba38" frameBorder='0'/>
+                                </div>
+                            </div>
                         </section>
                     </section>
                     {/* ----- Akhir dari baris ke-2 ----- */}
