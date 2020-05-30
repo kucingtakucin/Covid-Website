@@ -1,12 +1,12 @@
 import React, {Component, useState} from 'react'
+import Link from "next/link";
 import Head from 'next/head'
+import {Button, Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
 import DataKasus from "../components/DataKasus"
 import PetaKasus from "../components/PetaKasus"
 import PetaRujukan from "../components/PetaRujukan"
 import TentangKasus from "../components/TentangKasus"
 import PencegahanKasus from "../components/PencegahanKasus";
-import Link from "next/link";
-import {Button, Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
 
 class Home extends Component {
     render() {
