@@ -29,7 +29,7 @@ class Home extends Component {
 export function AppNavbar() {
     return (
         <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
-            <div className="container-fluid">
+            <div className="container">
                 <Link href='/'>
                     <a className="navbar-brand">
                         <img src="/images/react.png" width='30' height='30' alt="Navbar Brand"/>
@@ -43,12 +43,27 @@ export function AppNavbar() {
                     <ul className="navbar-nav mr-auto"> {/* Disini nanti tempat nambahin menu-menu di navbar nya*/}
                         <li className="nav-item active">
                             <Link href='/'>
-                                <a className="nav-link">Home <span className="sr-only">(current)</span></a>
+                                <a className="nav-link">Beranda</a>
                             </Link>
                         </li>
                         <li className="nav-item">
-                            <Link href='/Link'>
-                                <a className="nav-link" href="#">Link</a>
+                            <Link href='/Radar'>
+                                <a className="nav-link">Peta</a>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link href='/Donasi'>
+                                <a className="nav-link">Donasi</a>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link href='/Podcast'>
+                                <a className="nav-link">Podcast</a>
+                            </Link>
+                        </li>
+                        <li className="nav-item">
+                            <Link href='/Game'>
+                                <a className="nav-link">Game</a>
                             </Link>
                         </li>
                     </ul>
