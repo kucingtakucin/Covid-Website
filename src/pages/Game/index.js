@@ -1,26 +1,25 @@
 import React, {Component} from 'react'
+import $ from 'jquery'
 import {AppFooter, AppNavbar} from "../index"
 import Head from "next/head"
 
 class Game extends Component {
     constructor(props) {
-        super(props)
+        super(props);
         this.startGame = this.startGame.bind(this)
     }
 
     componentDidMount() {
         this.holes = document.getElementsByClassName('hole')
         this.scoreBoard = document.getElementById('score')
-        this.moles = document.getElementsByClassName('mole')
+        this.moles = document.querySelectorAll('.mole')
         this.lastHole = null
         this.timeUp = false
         this.score = 0
-        Array.from(this.moles).forEach(mole => {
-            mole.addEventListener('click', this.bonk)
-        })
-        document.body.addEventListener('click', function(event) {
-            if (event.target.classList.contains('mole')) {
-                this.parentNode.classList.remove('up')
+        $('.mole').on('click', this.bonk)
+        $(document.body).on('click', function(event) {
+            if (event.target.parentNode.classList.contains('hole')) {
+                event.target.parentNode.classList.remove('up')
             }
         })
     }
@@ -32,10 +31,8 @@ class Game extends Component {
     randomHole(holes) {
         const idx = Math.floor(Math.random() * holes.length)
         const hole = holes[idx]
-        if (hole === this.lastHole) {
-            console.log('Ah nah thats the same one bud')
+        if (hole === this.lastHole)
             return this.randomHole(holes)
-        }
         this.lastHole = hole
         return hole
     }
@@ -58,8 +55,7 @@ class Game extends Component {
         setTimeout(() => this.timeUp = true, 10000)
     }
 
-    bonk = (e) => {
-        if (!e.isTrusted) return // cheater!
+    bonk = () => {
         this.score++
         this.scoreBoard.textContent = this.score
     }

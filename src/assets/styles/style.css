@@ -153,10 +153,6 @@ main.game .game-area {
   display: flex;
   flex-wrap: wrap;
   margin: 0 auto;
-  cursor: url("/images/palu1.png"), auto;
-}
-main.game .game-area:active {
-  cursor: url("/images/palu2.png"), auto;
 }
 main.game .hole {
   flex: 1 0 33.33%;
@@ -181,7 +177,7 @@ main.game .mole {
   top: 100%;
   width: 100%;
   height: 100%;
-  transition: all 0.4s;
+  transition: all 0.3s;
 }
 main.game .hole.up .mole {
   top: 0;
