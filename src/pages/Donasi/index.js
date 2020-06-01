@@ -1,6 +1,7 @@
 import React, {Component} from 'react'
 import {AppFooter, AppNavbar} from "../index";
 import Head from "next/head";
+import {Button, Card, CardBody, CardImg, Col, Row} from "reactstrap";
 
 class Donasi extends Component {
     render() {
@@ -17,54 +18,54 @@ class Donasi extends Component {
                 </header>
                 <main className='donasi'>
                     <div className="container mt-5">
-                        <section className="row">
-                            <section className="col-md-12">
+                        <Row>
+                            <Col md='12'>
                                 <h1 className="display-4 mt-5 mb-5 font-weight-bold text-center text-white">Donasi untuk Pencegahan <span id="covid-19">COVID-19</span></h1>
-                            </section>
-                        </section>
-                        <section className="row">
-                            <section className="col-md-12">
-                                <div className="card ml-auto mr-auto shadow mb-3">
-                                    <div className="row no-gutters">
-                                        <div className="col-md-4 d-flex justify-content-center">
-                                            <img src="/images/masker.svg" className="card-img mt-3 mb-3" alt="Masker"/>
-                                        </div>
-                                        <div className="col-md-8">
-                                            <div className="card-body">
+                            </Col>
+                        </Row>
+                        <Row>
+                            <Col md='12'>
+                                <Card className="ml-auto mr-auto bg-white rounded-lg shadow mb-3">
+                                    <Row className="no-gutters">
+                                        <Col md='4' className="d-flex justify-content-center">
+                                            <CardImg src="/images/masker.svg" className="mt-3 mb-3" alt="Masker"/>
+                                        </Col>
+                                        <Col md='8'>
+                                            <CardBody>
                                                 <h3 className="card-title font-weight-bold">Donasi Masker</h3>
-                                                <button className="btn btn-lg btn-info">Donasi Sekarang</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="card ml-auto mr-auto shadow mb-3">
-                                    <div className="row no-gutters">
-                                        <div className="col-md-4 d-flex justify-content-center">
-                                            <img src="/images/sanitizer.svg" className="card-img mt-3 mb-3" alt="Hand Sanitizer"/>
-                                        </div>
-                                        <div className="col-md-8">
-                                            <div className="card-body">
+                                                <Button color='info' size='lg'>Donasi Sekarang</Button>
+                                            </CardBody>
+                                        </Col>
+                                    </Row>
+                                </Card>
+                                <Card className="ml-auto mr-auto bg-white rounded-lg shadow mb-3">
+                                    <Row className="no-gutters">
+                                        <Col md='4' className="d-flex justify-content-center">
+                                            <CardImg src="/images/sanitizer.svg" className="mt-3 mb-3" alt="Hand-Sanitizer"/>
+                                        </Col>
+                                        <Col md='8'>
+                                            <CardBody>
                                                 <h3 className="card-title font-weight-bold">Donasi Hand-Sanitizer</h3>
-                                                <button className="btn btn-lg btn-info">Donasi Sekarang</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="card ml-auto mr-auto shadow mb-3">
-                                    <div className="row no-gutters">
-                                        <div className="col-md-4 d-flex justify-content-center">
-                                            <img src="/images/beauty.svg" className="card-img mt-3 mb-3" alt="Desinfektan"/>
-                                        </div>
-                                        <div className="col-md-8">
-                                            <div className="card-body">
+                                                <Button color='info' size='lg'>Donasi Sekarang</Button>
+                                            </CardBody>
+                                        </Col>
+                                    </Row>
+                                </Card>
+                                <Card className="ml-auto mr-auto bg-white rounded-lg shadow mb-3">
+                                    <Row className="no-gutters">
+                                        <Col md='4' className="d-flex justify-content-center">
+                                            <CardImg src="/images/beauty.svg" className="mt-3 mb-3" alt="Desinfektan"/>
+                                        </Col>
+                                        <Col md='8'>
+                                            <CardBody>
                                                 <h3 className="card-title font-weight-bold">Donasi Desinfektan</h3>
-                                                <button className="btn btn-lg btn-info">Donasi Sekarang</button>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </section>
+                                                <Button color='info' size='lg'>Donasi Sekarang</Button>
+                                            </CardBody>
+                                        </Col>
+                                    </Row>
+                                </Card>
+                            </Col>
+                        </Row>
                     </div>
                 </main>
                 <AppFooter/>

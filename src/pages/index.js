@@ -1,7 +1,18 @@
 import React, {Component, useState} from 'react'
 import Link from "next/link";
 import Head from 'next/head'
-import {Button, Modal, ModalBody, ModalFooter, ModalHeader} from "reactstrap";
+import {
+    Button, Card, CardBody, CardImg, CardTitle, Col, Collapse, Container,
+    Modal,
+    ModalBody,
+    ModalFooter,
+    ModalHeader,
+    Nav,
+    Navbar,
+    NavbarBrand, NavbarText,
+    NavbarToggler,
+    NavItem, NavLink, Row
+} from "reactstrap";
 import DataKasus from "../components/DataKasus"
 import PetaKasus from "../components/PetaKasus"
 import PetaRujukan from "../components/PetaRujukan"
@@ -27,49 +38,49 @@ class Home extends Component {
 }
 
 export function AppNavbar() {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggle = () => setIsOpen(!isOpen);
     return (
-        <nav className="navbar navbar-expand-lg navbar-light bg-white fixed-top shadow">
-            <div className="container">
+        <Navbar color="white" light expand="md" fixed='top' className='shadow'>
+            <Container>
                 <Link href='/'>
-                    <a className="navbar-brand">
-                        <img src="/images/react.png" width='30' height='30' alt="Navbar Brand"/>
-                    </a>
+                    <NavbarBrand>
+                        <img src="/images/react.png" width='35' height='30' alt="Navbar Brand"/>
+                    </NavbarBrand>
                 </Link>
-                <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span className="navbar-toggler-icon"/>
-                </button>
-
-                <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav mr-auto"> {/* Disini nanti tempat nambahin menu-menu di navbar nya*/}
-                        <li className="nav-item active">
-                            <Link href='/'>
-                                <a className="nav-link">Beranda</a>
+                <NavbarToggler onClick={toggle} />
+                <Collapse isOpen={isOpen} navbar>
+                    <Nav className="mr-auto" navbar>
+                        <NavItem>
+                            <Link href="/">
+                                <NavLink>Beranda</NavLink>
                             </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link href='/Radar'>
-                                <a className="nav-link">Peta</a>
+                        </NavItem>
+                        <NavItem>
+                            <Link href="/Radar">
+                                <NavLink>Peta</NavLink>
                             </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link href='/Donasi'>
-                                <a className="nav-link">Donasi</a>
+                        </NavItem>
+                        <NavItem>
+                            <Link href="/Donasi">
+                                <NavLink>Donasi</NavLink>
                             </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link href='/Podcast'>
-                                <a className="nav-link">Podcast</a>
+                        </NavItem>
+                        <NavItem>
+                            <Link href="/Podcast">
+                                <NavLink>Podcast</NavLink>
                             </Link>
-                        </li>
-                        <li className="nav-item">
-                            <Link href='/Game'>
-                                <a className="nav-link">Game</a>
+                        </NavItem>
+                        <NavItem>
+                            <Link href="/Game">
+                                <NavLink>Game</NavLink>
                             </Link>
-                        </li>
-                    </ul>
-                </div>
-            </div>
-        </nav>
+                        </NavItem>
+                    </Nav>
+                    <NavbarText>React.Js version : {React.version}</NavbarText>
+                </Collapse>
+            </Container>
+        </Navbar>
     )
 }
 
@@ -84,35 +95,35 @@ export function AppHeader() {  /* Ini header */
             {/* ----- Akhir dari Navbar ----- */}
 
             {/* ----- Container ----- */}
-            <div className="container d-flex flex-column align-items-center justify-content-center">
+            <Container className="d-flex flex-column align-items-center justify-content-center">
                 {/* ----- Baris ke-1 ----- */}
-                <section className="row mb-3">
+                <Row className="mb-3">
                     {/* ----- Kolom ke-1 ----- */}
-                    <section className="col-md-6">      {/* Ini buat big title */}
+                    <Col md='6'>      {/* Ini buat big title */}
                         <h1 className='text-white'>Covid Website Kita</h1>
-                    </section>
+                    </Col>
                     {/* ----- Akhir dari kolom ke-1 ----- */}
 
                     {/* ----- Kolom ke-2 ----- */}
-                    <section className="col-md-6">      {/* Ini buat gambar karakter & virus corona */}
+                    <Col md='6'>      {/* Ini buat gambar karakter & virus corona */}
 
-                    </section>
+                    </Col>
                     {/* ----- Akhir dari kolom ke-2 ----- */}
-                </section>
+                </Row>
                 {/* ----- Akhir dari baris ke-1 -----*/}
 
                 {/* ----- Baris ke-2  ----- */}
-                <section className="row">
+                <Row>
                     {/* ----- Kolom ke-1 ----- */}
-                    <section className="col-md-4">
+                    <Col md='4'>
                         {/* ----- Card -----*/}
                             <a onClick={toggle}>
-                                <div className="card bg-light shadow rounded-lg mb-5">
-                                    <img src="/images/emergency-call.svg" className="card-img-top ml-auto mr-auto mt-2" alt="Call Center"/>
-                                    <div className="card-body">
-                                        <h5 className="card-title text-center m-0">Call Center</h5>
-                                    </div>
-                                </div>
+                                <Card className='bg-white shadow rounded-lg mb-5'>
+                                    <CardImg top width="100%" src="/images/emergency-call.svg" className='ml-auto mr-auto mt-2' alt="Call Center" />
+                                    <CardBody>
+                                        <CardTitle className='m-0'><h5 className='text-center m-0'>Call Center</h5></CardTitle>
+                                    </CardBody>
+                                </Card>
                             </a>
                         <Modal isOpen={modal} toggle={toggle}>
                             <ModalHeader toggle={toggle}><span id="covid-19">COVID-19</span> Hotline</ModalHeader>
@@ -123,84 +134,84 @@ export function AppHeader() {  /* Ini header */
                                 <Button color="primary" onClick={toggle}>Oke</Button>
                             </ModalFooter>
                         </Modal>
-                    </section>
-                    <section className="col-md-4">
+                    </Col>
+                    <Col md='4'>
                         {/* ----- Card -----*/}
                         <Link href='/SelfAssessment'>
                             <a>
-                                <div className="card bg-light shadow rounded-lg mb-5">
-                                    <img src="/images/medical-record.svg" className="card-img-top ml-auto mr-auto mt-2" alt="Self Assessment"/>
-                                    <div className="card-body">
-                                        <h5 className="card-title text-center m-0">Self Assessment</h5>
-                                    </div>
-                                </div>
+                                <Card className='bg-white shadow rounded-lg mb-5'>
+                                    <CardImg top width="100%" src="/images/medical-record.svg" className='ml-auto mr-auto mt-2' alt="Self Assessment" />
+                                    <CardBody>
+                                        <CardTitle className='m-0'><h5 className='text-center m-0'>Self Assessment</h5></CardTitle>
+                                    </CardBody>
+                                </Card>
                             </a>
                         </Link>
-                    </section>
+                    </Col>
                     {/* ----- Akhir dari kolom ke-1 ----- */}
 
                     {/* ----- Kolom ke-2 ----- */}
-                    <section className="col-md-4">
+                    <Col md='4'>
                         {/* ----- Card ----- */}
                         <Link href='/Radar'>
                             <a>
-                                <div className="card bg-light shadow rounded-lg mb-5">
-                                    <img src="/images/placeholder.svg" className="card-img-top ml-auto mr-auto mt-2" alt="Radar"/>
-                                    <div className="card-body">
-                                        <h5 className="card-title text-center m-0">Radar Covid-19</h5>
-                                    </div>
-                                </div>
+                                <Card className='bg-white shadow rounded-lg mb-5'>
+                                    <CardImg top width="100%" src="/images/placeholder.svg" className='ml-auto mr-auto mt-2' alt="Radar Covid-19" />
+                                    <CardBody>
+                                        <CardTitle className='m-0'><h5 className='text-center m-0'>Radar</h5></CardTitle>
+                                    </CardBody>
+                                </Card>
                             </a>
                         </Link>
-                    </section>
-                    <section className="col-md-4">
+                    </Col>
+                    <Col md='4'>
                         {/* ----- Card ----- */}
                         <Link href='/Donasi'>
                             <a>
-                                <div className="card bg-light shadow rounded-lg mb-5">
-                                    <img src="/images/return-of-investment.svg" className="card-img-top ml-auto mr-auto mt-2" alt="Donasi"/>
-                                    <div className="card-body">
-                                        <h5 className="card-title text-center m-0">Donasi</h5>
-                                    </div>
-                                </div>
+                                <Card className='bg-white shadow rounded-lg mb-5'>
+                                    <CardImg top width="100%" src="/images/return-of-investment.svg" className='ml-auto mr-auto mt-2' alt="Donasi" />
+                                    <CardBody>
+                                        <CardTitle className='m-0'><h5 className='text-center m-0'>Donasi</h5></CardTitle>
+                                    </CardBody>
+                                </Card>
                             </a>
                         </Link>
-                    </section>
+                    </Col>
                     {/* ----- Akhir dari kolom ke-2*/}
 
                     {/* ----- Kolom ke-3 ----- */}
-                    <section className="col-md-4">
+                    <Col md='4'>
                         {/* ----- Card ----- */}
                         <Link href='/Podcast'>
                             <a>
-                                <div className="card bg-light shadow rounded-lg mb-5">
-                                    <img src="/images/headphones.svg" className="card-img-top ml-auto mr-auto mt-2" alt="Podcast"/>
-                                    <div className="card-body">
-                                        <h5 className="card-title text-center m-0">Podcast Covid-19</h5>
-                                    </div>
-                                </div>
+                                <Card className='bg-white shadow rounded-lg mb-5'>
+                                    <CardImg top width="100%" src="/images/headphones.svg" className='ml-auto mr-auto mt-2' alt="Podcast" />
+                                    <CardBody>
+                                        <CardTitle className='m-0'><h5 className='text-center m-0'>Podcast</h5></CardTitle>
+                                    </CardBody>
+                                </Card>
                             </a>
                         </Link>
-                    </section>
-                    <section className="col-md-4">
+                    </Col>
+                    <Col md='4'>
                         {/* ----- Card ----- */}
                         <Link href='/Game'>
                             <a>
-                                <div className="card bg-light shadow rounded-lg mb-5">
-                                    <img src="/images/focus.svg" className="card-img-top ml-auto mr-auto mt-2" alt="Game"/>
-                                    <div className="card-body">
-                                        <h5 className="card-title text-center m-0">Game Whack-A-Corona</h5>
-                                    </div>
-                                </div>
+                                <Card className='bg-white shadow rounded-lg mb-5'>
+                                    <CardImg top width="100%" src="/images/focus.svg" className='ml-auto mr-auto mt-2' alt="Game" />
+                                    <CardBody>
+                                        <CardTitle className='m-0'><h5 className='text-center m-0'>Game</h5></CardTitle>
+                                    </CardBody>
+                                </Card>
                             </a>
                         </Link>
-                    </section>
+                    </Col>
                     {/* ----- Akhir dari kolom ke-3 ----- */}
 
-                </section>
+                </Row>
                 {/* ----- Akhir dari Baris ke-1 ----- */}
 
-            </div>
+            </Container>
             {/* ----- Akhir dari Container ----- */}
         </header>
     )
@@ -223,12 +234,12 @@ function AppMain() {    /* Ini main */
 export function AppFooter() {      /* Ini footer */
     return (
         <footer>
-            <div className="container d-flex align-items-center justify-content-center">
+            <Container className="d-flex align-items-center justify-content-center">
                 <a>
                     Powered by{' '}
                     Covid Website Kita 2020
                 </a>
-            </div>
+            </Container>
         </footer>
     )
 }

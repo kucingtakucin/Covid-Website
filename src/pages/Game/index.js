@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import $ from 'jquery'
 import {AppFooter, AppNavbar} from "../index"
 import Head from "next/head"
+import {Button, Col, Container, Row} from "reactstrap";
 
 class Game extends Component {
     constructor(props) {
@@ -73,13 +74,13 @@ class Game extends Component {
                     <AppNavbar/>
                 </header>
                 <main className='game'>
-                    <div className="container mt-5">
-                        <section className="row">
-                            <section className="col-sm-12 d-flex flex-column justify-content-center align-items-center">
+                    <Container className="mt-5">
+                        <Row>
+                            <Col sm="12" className="d-flex flex-column justify-content-center align-items-center">
                                 <h1 className='mt-5 text-white text-center'>Whack-a-Corona! <span id="score">0</span></h1>
-                                <button className='btn btn-lg btn-success mt-3' onClick={this.startGame}>Start!</button>
-                            </section>
-                        </section>
+                                <Button color='success' size='lg' className='mt-3' onClick={this.startGame}>Start!</Button>
+                            </Col>
+                        </Row>
 
                         <div className="game-area">
                             <div className="hole hole1">
@@ -101,7 +102,7 @@ class Game extends Component {
                                 <div className="mole"/>
                             </div>
                         </div>
-                    </div>
+                    </Container>
                 </main>
                 <AppFooter/>
             </React.Fragment>
