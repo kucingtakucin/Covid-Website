@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2020.
+ * @author (Sari Eka Nur Marifah, Nandhika Kurniasari, Adam Arthur Faizal)
+ * @version (5 Juni 2020)
+ */
+
 import React from 'react'
 import fetch from "isomorphic-unfetch";
 

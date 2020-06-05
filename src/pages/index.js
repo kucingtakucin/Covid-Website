@@ -1,3 +1,9 @@
+/*
+ * Copyright (c) 2020.
+ * @author (Sari Eka Nur Marifah, Nandhika Kurniasari, Adam Arthur Faizal)
+ * @version (5 Juni 2020)
+ */
+
 import React, {Component, useState} from 'react'
 import Link from "next/link";
 import Head from 'next/head'

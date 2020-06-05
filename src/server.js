@@ -1,3 +1,9 @@
+/**
+ * Copyright (c) 2020.
+ * @author (Sari Eka Nur Marifah, Nandhika Kurniasari, Adam Arthur Faizal)
+ * @version (5 Juni 2020)
+ */
+
 const express = require('express')
 const next = require('next')
 const bodyParser = require('body-parser')
