@@ -1,4 +1,4 @@
-/*
+/**
  * Copyright (c) 2020.
  * @author (Sari Eka Nur Marifah, Nandhika Kurniasari, Adam Arthur Faizal)
  * @version (5 Juni 2020)
@@ -83,7 +83,7 @@ export function AppNavbar() {
                             </Link>
                         </NavItem>
                     </Nav>
-                    <NavbarText>React.Js version : {React.version}</NavbarText>
+                    <NavbarText>React Js version : {React.version}</NavbarText>
                 </Collapse>
             </Container>
         </Navbar>
@@ -111,8 +111,8 @@ export function AppHeader() {  /* Ini header */
                     {/* ----- Akhir dari kolom ke-1 ----- */}
 
                     {/* ----- Kolom ke-2 ----- */}
-                    <Col md='6'>      {/* Ini buat gambar karakter & virus corona */}
-
+                    <Col md='6' className='d-flex justify-content-end'>      {/* Ini buat gambar karakter & virus corona */}
+                        <img src="/images/karakter.svg" alt="Karakter"/>
                     </Col>
                     {/* ----- Akhir dari kolom ke-2 ----- */}
                 </Row>

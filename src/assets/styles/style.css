@@ -31,6 +31,9 @@ header .container .row:first-child {
   margin-top: 200px;
   width: 100%;
 }
+header .container .row:first-child img {
+  height: 250px;
+}
 header .container a {
   color: #007bff;
   text-decoration: none;
@@ -46,17 +49,17 @@ header .container a:hover {
   color: #0d47a1;
 }
 
-header.podcast {
-  background: url("/images/background.png") center center no-repeat;
-  background-size: cover;
-  min-height: 800px;
-}
-
 main {
   font-family: "Cuprum", sans-serif;
 }
 main section#data-kasus .container {
   min-height: 80vh;
+}
+main section#data-kasus .container .card img {
+  width: 65px;
+}
+main section#data-kasus .container .card .bendera-indonesia {
+  width: 50px;
 }
 main section#data-kasus .container .card.bg-merah {
   background-color: #f06292;
@@ -128,14 +131,10 @@ main.self-assessment .card img {
 }
 
 main.podcast {
+  background: url("/images/background.png") center center no-repeat;
+  background-size: cover;
   font-family: "Cuprum", sans-serif;
   min-height: 110vh;
-}
-main.podcast .container {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
 }
 main.podcast .container .card {
   max-width: 600px;
@@ -183,16 +182,16 @@ main.game .hole:after {
   bottom: -30px;
 }
 main.game .mole {
-  background: url("/images/mole.svg") bottom center no-repeat;
-  background-size: 60%;
+  background: url("/images/VIRUS.png") bottom center no-repeat;
+  background-size: 80%;
   position: absolute;
   top: 100%;
   width: 100%;
   height: 100%;
-  transition: all 0.3s;
+  transition: all 0.5s;
 }
 main.game .hole.up .mole {
-  top: 0;
+  top: -30px;
 }
 
 footer {

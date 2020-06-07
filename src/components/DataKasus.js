@@ -68,7 +68,8 @@ class DataKasus extends Component {
                     {/* ----- Baris ke-1 ----- */}
                     <section className="row">
                         <section className="col-md-12 text-center"> {/* Ini untuk judul */}
-                            <h1 className="display-4 mb-5 mt-5 font-weight-bold"><span id="covid-19">COVID-19</span> Global & National Data</h1>
+                            <h1 className="display-4 mb-5 mt-5 font-weight-bold"><span
+                                id="covid-19">COVID-19</span> Global & National Data</h1>
                         </section>
                     </section>
                     {/* ----- Akhir dari baris ke-1 ----- */}
@@ -82,11 +83,11 @@ class DataKasus extends Component {
                                 <div className="card-header p-1 text-center"><h5 className="m-0">TOTAL POSITIF</h5>
                                 </div>
                                 <div className="row no-gutters">
-                                    <section className="col-md-4">
-                                        <img src="..." className="card-img" alt="..."/>
+                                    <section className="col-md-4 d-flex flex-column align-items-center justify-content-center">
+                                        <img src="/images/sad-u6e.png" className="card-img img-fluid" alt="Sad"/>
                                     </section>
                                     <section className="col-md-8">
-                                        <div className="card-body">
+                                        <div className="card-body pl-0">
                                             <h2 className="card-title font-weight-bold mb-0">{this.state.global.global_positif}</h2>
                                             <p className="card-text">Orang</p>
                                         </div>
@@ -102,11 +103,11 @@ class DataKasus extends Component {
                             <div className="card bg-hijau text-white shadow rounded-pill overflow-hidden mb-3">
                                 <div className="card-header p-1 text-center"><h5 className="m-0">TOTAL SEMBUH</h5></div>
                                 <div className="row no-gutters">
-                                    <section className="col-md-4">
-                                        <img src="..." className="card-img" alt="..."/>
+                                    <section className="col-md-4 d-flex flex-column align-items-center justify-content-center">
+                                        <img src="/images/happy-ipM.png" className="card-img img-fluid" alt="Happy"/>
                                     </section>
                                     <section className="col-md-8">
-                                        <div className="card-body">
+                                        <div className="card-body pl-0">
                                             <h2 className="card-title font-weight-bold mb-0">{this.state.global.global_sembuh}</h2>
                                             <p className="card-text">Orang</p>
                                         </div>
@@ -123,11 +124,11 @@ class DataKasus extends Component {
                                 <div className="card-header p-1 text-center"><h5 className="m-0">TOTAL MENINGGAL</h5>
                                 </div>
                                 <div className="row no-gutters">
-                                    <section className="col-md-4">
-                                        <img src="..." className="card-img" alt="..."/>
+                                    <section className="col-md-4 d-flex flex-column align-items-center justify-content-center">
+                                        <img src="/images/emoji-LWx.png" className="card-img img-fluid" alt="Emoji"/>
                                     </section>
                                     <section className="col-md-8">
-                                        <div className="card-body">
+                                        <div className="card-body pl-0">
                                             <h2 className="card-title font-weight-bold mb-0">{this.state.global.global_meninggal}</h2>
                                             <p className="card-text">Orang</p>
                                         </div>
@@ -146,7 +147,7 @@ class DataKasus extends Component {
                             <div className="card bg-biru rounded-lg shadow">
                                 <div className="card-header text-white d-flex flex-row justify-content-center">
                                     <h1 className="m-0 mr-3">INDONESIA</h1>
-                                    <img src="/images/Bendera-Indonesia.png" style={{width: '50px'}}
+                                    <img src="/images/Bendera-Indonesia.png" className='bendera-indonesia'
                                          alt="Bendera Indonesia"/>
                                 </div>
                                 <div className="card-body">
@@ -213,7 +214,7 @@ class DataKasus extends Component {
                 </div>
                 {/* ----- Akhir dari container -----*/}
             </section>
-        )
+        );
     }
 }
 

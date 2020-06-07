@@ -20,12 +20,16 @@ app.prepare().then(() => {
     server.use(bodyParser.json())
     server.use(cors())
 
-    server.use(function(req, res, next) {
-        res.header('Access-Control-Allow-Origin', '*'); //replace localhost with actual host
+    server.use((req, res, next) => {
+        res.header('Access-Control-Allow-Origin', '*');
         res.header('Access-Control-Allow-Methods', 'OPTIONS, GET, PUT, PATCH, POST, DELETE');
         res.header('Access-Control-Allow-Headers', 'Content-Type, X-Requested-With, Authorization');
         next();
     })
+
+    server.get('/', (req, res) => {
+        return app.render(req, res, '/')
+    });
 
     server.all('*', (req, res) => {
         return handle(req, res)
